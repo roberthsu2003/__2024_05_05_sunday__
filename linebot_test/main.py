@@ -14,7 +14,7 @@ handler = WebhookHandler(os.environ['CHANNEL_SECRET'])
 
 @app.route("/")
 def index():
-    return "<h1>我的第一個網站-修改目前網站</h1>"
+    return "<h1>LineBot的webhook的程式</h1>"
 
 @app.route("/callback", methods=['POST'])
 def callback():
